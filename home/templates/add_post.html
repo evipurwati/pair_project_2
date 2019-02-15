@@ -1,0 +1,32 @@
+{% extends 'base.2.html' %}
+
+{% block title %}
+<title>Front-end Project</title>
+{% endblock title %}
+
+{% block category %}
+{% for category in categories %}
+<a href="{% url 'post_by_category' category_id=category.id %}">{{ category.name }}</a>
+{% endfor %}
+{% endblock category %}
+
+{% block form %}
+<div class="card post-thumbnail my-0 border-top-0 border-left-0 border-right-0">
+  <div class="card-header">
+    <h5 class="card-title">Add New Post</h5>
+  </div>
+  <form method="post" enctype="multipart/form-data">
+    <div class="card-body bg-success text-light">
+      {% csrf_token %}
+      {{ form.as_p}}
+    </div>
+    <div class="card-footer">
+      <button type="submit" class="btn btn-primary btn-block">Save</button>
+    </div>
+  </form>
+</div>
+{% endblock form %}
+
+</body>
+
+</html>
