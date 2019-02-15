@@ -1,0 +1,160 @@
+{% load static %}
+<html>
+
+
+<head>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <header class="header1">
+        <nav class="navbar navbar-expand-lg header1">
+            <div class="col-md-8 col-sm-3 image">
+                <img src="../static/icon/9gag.png" class="logo9gag">
+            </div>
+            <div class="col-md-4 col-sm-3" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <!-- <img src="../static/icon/kisspng-e-commerce-online-shopping-icon-double-twelve-shopping-cart-vector-material-5aa0ca3f7db2d7.1312061015204869755149.jpg" class="iconkeranjang"> -->
+                </form>
+            </div>
+        </nav>
+        <div class="row" style="background-color: black">
+            <div class="col-md-8 col-sm-6 menu-stuff">
+                <nav class="navbar navbar-expand-lg">
+                    <ul class="navbar-nav row" style="width: 100%;">
+                        <li class="nav-item navtext col-lg-1 text-center">
+                            <a class="nav-link" href="#" style="color: grey">HOME<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item navtext col-lg-1 text-center">
+                            <a class="nav-link" href="#" style="color: grey"">TEES</a>
+                                    </li>
+                                    <li class=" nav-item navtext col-lg-3 text-center">
+                                <a class="nav-link" href="#" style="color: grey">HOODIES & SWEATERS</a>
+                        </li>
+                        <li class="nav-item navtext col-lg-2 text-center">
+                            <a class="nav-link" href="#" style="color: grey">ACCESSORIES</a>
+                        </li>
+                        <li class="nav-item navtext col-lg-3 text-center">
+                            <a class="nav-link" href="#" style="color: grey">HOME & LIVING</a>
+                        </li>
+                        <li class="nav-item navtext col-lg-2 text-center">
+                            <a class="nav-link" href="#" style="color: grey">NSFW CLOTHING</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <nav class="navbar navbar-expand-lg">
+                    <ul class="navbar-nav row" style="width: 100%;">
+                        <li class="nav-item navacc col-lg-12 text-right">
+                            <a class="nav-link" href="#" style="color: grey">Account</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <h4 class="font-weight-bold text-uppercase mt-3 mb-4">ABOUT 9GAG SHOP</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="navtext">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="navtext">SHIPPING</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="navtext">TERMS</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="navtext">PRIVACY</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-3 mx-auto">
+                    <h4 class="font-weight-bold text-uppercase mt-3 mb-4">FOLLOW US</h4>
+                    <a href="#"><img src="../static/icon/c299d7fd91c766a8e3ba1586270e2891-facebook-distorted-icon.png"
+                            class="icon-fb"></a>
+                    <a href="#"><img
+                            src="../static/icon/54c1f543f37fdb28ea82277c471c22cc-instagram-distorted-icon-by-vexels.png"
+                            class="icon-ig"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <div class="footer-copyright text-left py-3" style="padding: 0">© 2019,
+                        <a href="https://mdbootstrap.com/education/bootstrap/" class="navtext">9GAG</a><span> Shop</span>
+                    </div>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-3 mx-auto">
+                    <a href="#"><img src="../static/icon/amex.png" style="width: 20%"></a>
+                    <a href="#"><img src="../static/icon/master-card-icon-256.png" style="width: 18%"></a>
+                    <a href="#"><img src="../static/icon/payment-method-visa-512.png" style="width: 18%"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- <div class="row footer-2">
+        <div class="col-md-9 mx-auto">
+            <div>
+                <p class="navtext" style="font-size: 10px;"> ©2019, 9GAG SHOPS</p>
+            </div>
+        </div>
+
+        
+
+        <!-- <div class="col-md-3 col-sm">
+            <div>
+                <table>
+                    <tr>
+                        <td><img src="../static/icon/amex.png" style="width: 40%"></td>
+                        <td><img src="../static/icon/master-card-icon-256.png" style="width: 70%"></td>
+                        <td><img src="../static/icon/payment-method-visa-512.png" style="width: 30%"></td>
+                    </tr>
+                </table>
+            </div>
+        </div> -->
+    </div>
+
+    </footer> -->
+</body>
+
+</html>

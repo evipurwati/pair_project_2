@@ -1,3 +1,5 @@
-from django.contrib import admin
+from django.contrib import admin        
+from .models import Stuff
 
-# Register your models here.
+my_model = [Stuff]
+admin.site.register(my_model)

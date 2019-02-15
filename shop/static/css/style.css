@@ -1,0 +1,74 @@
+.navtext{
+    color: grey;
+    font-size: 10px;
+}
+
+.navacc{
+    font-size: 13px;
+}
+
+.logo9gag{
+    max-width: 20%;
+}
+
+.image{
+    background-color: black;
+}
+
+.header1{
+    padding: 0px;
+    background-color: black;
+}
+
+.container-foto{
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+h3{
+    background-color: black;
+    width: 300px;
+    height: 50px;
+}
+
+.footer-1, .footer-2{
+    background-color: black;
+    padding: 30px;
+}
+
+body{
+    color: white;
+}
+
+.icon-fb{
+    width: 10%;
+}
+
+.icon-ig{
+    width: 10%;
+}
+
+.text-foot{
+    color: white;
+}
+
+.follow{
+    text-align: right;
+}
+
+.imgf{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.katalog{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page-footer{
+    background-color: black;
+    color: white;
+}
