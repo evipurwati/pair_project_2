@@ -33,7 +33,6 @@
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    <!-- <img src="../static/icon/kisspng-e-commerce-online-shopping-icon-double-twelve-shopping-cart-vector-material-5aa0ca3f7db2d7.1312061015204869755149.jpg" class="iconkeranjang"> -->
                 </form>
             </div>
         </nav>
@@ -42,24 +41,11 @@
                 <nav class="navbar navbar-expand-lg">
                     <ul class="navbar-nav row" style="width: 100%;">
                         <li class="nav-item navtext col-lg-1 text-center">
-                            <a class="nav-link" href="#" style="color: grey">HOME<span
+                            <a class="nav-link" href="{% url 'shop' %}" style="color: grey">HOME<span
                                     class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item navtext col-lg-1 text-center">
-                            <a class="nav-link" href="#" style="color: grey"">TEES</a>
-                                    </li>
-                                    <li class=" nav-item navtext col-lg-3 text-center">
-                                <a class="nav-link" href="#" style="color: grey">HOODIES & SWEATERS</a>
-                        </li>
-                        <li class="nav-item navtext col-lg-2 text-center">
-                            <a class="nav-link" href="#" style="color: grey">ACCESSORIES</a>
-                        </li>
-                        <li class="nav-item navtext col-lg-3 text-center">
-                            <a class="nav-link" href="#" style="color: grey">HOME & LIVING</a>
-                        </li>
-                        <li class="nav-item navtext col-lg-2 text-center">
-                            <a class="nav-link" href="#" style="color: grey">NSFW CLOTHING</a>
-                        </li>
+                        {% block menu %}
+                        {% endblock menu %}
                     </ul>
                 </nav>
             </div>
@@ -79,13 +65,10 @@
 
     {% endblock %}
 
-    <!-- Footer -->
     <footer class="page-footer font-small stylish-color-dark pt-4">
 
-        <!-- Footer Links -->
         <div class="container text-center text-md-left">
 
-            <!-- Grid row -->
             <div class="row">
                 <div class="col-md-9 mx-auto">
                     <h4 class="font-weight-bold text-uppercase mt-3 mb-4">ABOUT 9GAG SHOP</h4>
@@ -107,9 +90,10 @@
                 <hr class="clearfix w-100 d-md-none">
                 <div class="col-md-3 mx-auto">
                     <h4 class="font-weight-bold text-uppercase mt-3 mb-4">FOLLOW US</h4>
-                    <a href="#"><img src="../static/icon/c299d7fd91c766a8e3ba1586270e2891-facebook-distorted-icon.png"
+                    <a href="https://www.facebook.com/9gag/"><img
+                            src="../static/icon/c299d7fd91c766a8e3ba1586270e2891-facebook-distorted-icon.png"
                             class="icon-fb"></a>
-                    <a href="#"><img
+                    <a href="https://www.instagram.com/9gag/?hl=en"><img
                             src="../static/icon/54c1f543f37fdb28ea82277c471c22cc-instagram-distorted-icon-by-vexels.png"
                             class="icon-ig"></a>
                 </div>
@@ -117,7 +101,8 @@
             <div class="row">
                 <div class="col-md-9 mx-auto">
                     <div class="footer-copyright text-left py-3" style="padding: 0">© 2019,
-                        <a href="https://mdbootstrap.com/education/bootstrap/" class="navtext">9GAG</a><span> Shop</span>
+                        <a href="https://mdbootstrap.com/education/bootstrap/" class="navtext">9GAG</a><span>
+                            Shop</span>
                     </div>
                 </div>
                 <hr class="clearfix w-100 d-md-none">
@@ -132,26 +117,6 @@
 
     </footer>
 
-    <!-- <div class="row footer-2">
-        <div class="col-md-9 mx-auto">
-            <div>
-                <p class="navtext" style="font-size: 10px;"> ©2019, 9GAG SHOPS</p>
-            </div>
-        </div>
-
-        
-
-        <!-- <div class="col-md-3 col-sm">
-            <div>
-                <table>
-                    <tr>
-                        <td><img src="../static/icon/amex.png" style="width: 40%"></td>
-                        <td><img src="../static/icon/master-card-icon-256.png" style="width: 70%"></td>
-                        <td><img src="../static/icon/payment-method-visa-512.png" style="width: 30%"></td>
-                    </tr>
-                </table>
-            </div>
-        </div> -->
     </div>
 
     </footer> -->
