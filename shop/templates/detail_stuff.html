@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block menu %}
+{% for menu in category %}
+<li class="nav-item navtext col-lg-2 text-center">
+    <a class="nav-link" href="{% url 'show_by_category' category_id=menu.id %}" style="color: grey">{{ menu.nama_kategori }}</a>
+</li>
+{% endfor %}
+{% endblock menu %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row katalog justify-content-center">
+
+        <div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
+            <img src="{{stuff.foto.url}}" alt="" style="max-width: 100%"/>
+            <div class="portfolio_images_overlay text-center">
+                <h6 class="clrd-font">{{stuff.nama}}</h6>
+                <p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i>{{ stuff.harga }}</p>
+                <p class="clrd-font">{{stuff.deskripsi}}</p>
+                <a href="{% url 'shop' %}">BACK TO WEB</a>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+{% endblock %}
