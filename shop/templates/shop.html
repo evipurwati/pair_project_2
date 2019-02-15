@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block menu %}
+{% for menu in category %}
+<li class="nav-item navtext col-lg-2 text-center">
+    <a class="nav-link" href="{% url 'show_by_category' category_id=menu.id %}" style="color: grey">{{ menu.nama_kategori }}</a>
+</li>
+{% endfor %}
+{% endblock menu %}
+
 {% block content %}
 <section>
     <div id="front-banner">
@@ -16,15 +24,9 @@
                 <div class="carousel-inner">
                     <div class="item active">
                         <img src="../static/images/lansi-swag.jpg" alt="Los Angeles" style="width:100%;">
-                        <div class="carousel-caption">
-                            <h3>LANSI SWAG</h3>
-                        </div>
                     </div>
                     <div class="item">
                         <img src="../static/images/9gag-og.png" alt="Chicago" style="width:100%;">
-                        <div class="carousel-caption">
-                            <h3>10GAG FOR LYFE</h3>
-                        </div>
                     </div>
                 </div>
                 <!-- Left and right controls -->
