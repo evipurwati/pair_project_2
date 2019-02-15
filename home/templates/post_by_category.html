@@ -1,0 +1,34 @@
+{% extends 'base.1.html' %}
+
+{% block title %}
+<title>Front-end Project</title>
+{% endblock title %}
+
+{% block category %}
+{% for category in categories %}
+<a href="{% url 'post_by_category' category_id=category.id %}">{{ category.name }}</a>
+{% endfor %}
+{% endblock category %}
+
+{% block posts %}
+{% for post in posts %}
+<div class="card post-thumbnail my-4 border-top-0 border-left-0 border-right-0">
+  <div class="card-header bg-white px-0">
+    <span class="category">{{ post.category }} &#183; </span>
+    <span class="blog-date">{{ post.posted_at }}</span>
+    <h5 class="card-title">
+      <a href="{% url 'post_detail' post_id=post.id %}">{{ post.title }}</a>
+    </h5>
+  </div>
+  <img class="card-img-top" src="{{ post.image.url }}" alt="kendala-sepulsa">
+  <div class="card-footer bg-white px-0">
+    <span class="like">{{ post.total_likes }} likes &#183; </span>
+    <span class="comment">{{ post.total_comments}} comments</span>
+  </div>
+</div>
+{% endfor %}
+{% endblock posts %}
+
+</body>
+
+</html>

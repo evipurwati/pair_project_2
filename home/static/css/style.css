@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'bebas-neue';
+    src: url('/static/fonts/BebasNeue-Regular.ttf'), format("truetype");
+    src: local(''), format("truetype");
+}
+a.navbar-brand{
+    font-family: 'bebas-neue';
+    font-size: 24px;
+}
+.row-height {
+    height: 87vh;
+    overflow: hidden;
+}
+.sidebar, .main  {
+    height: 100%;
+    overflow-y: scroll;
+}
+.thumbnail {
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.sidenav {
+    height: 100%;
+    width: 100%;
+}
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    color: black;
+}
+/* .carousel-inner {
+    max-height: 300px;
+} */
+.sidenav a:hover {
+    background: #818181;
+}
+.card.post-thumbnail {
+    background: white;
+}
+section {
+    margin-top: 70px;
+}
+span.blog-date, span.category, span.like, span.comment {
+    font-size: 12px;
+    color: grey;
+}
+h5.card-title a{
+    color: black;
+    text-decoration: none;
+}
+h5.card-title a:hover{
+    color: turquoise;
+    text-decoration: none;
+}
+.grey-text {
+    color: grey;
+}
